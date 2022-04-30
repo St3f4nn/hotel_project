@@ -1,3 +1,49 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    .container {
+        @apply px-3.5;
+    }
+
+    .logo {
+        @apply font-extralight text-40 leading-12 text-white cursor-pointer;
+    }
+
+    .hero-nav-menu-link-el {
+        @apply lg:font-light text-lg leading-8 lg:text-white hover:text-slate-500 transition-all text-2c4664 font-normal;
+    }
+
+    .hero-nav-btn-burger-line {
+        @apply w-3 h-0.5 bg-white;
+    }
+
+    .hero-content-social-link {
+        @apply w-12 h-12 border border-solid border-white border-opacity-29.51 rounded-full cursor-pointer flex items-center justify-center hover:border-opacity-100 hover:bg-white transition-all;
+    }
+
+    .book-heading, .book-day {
+        @apply font-normal text-sm leading-6 text-white opacity-49.56;
+    }
+
+    .book-date-number, .book-number {
+        @apply font-extralight text-56 leading-16 text-white;
+    }
+
+    .book-plus-minus {
+        @apply font-light text-2xl text-white cursor-pointer;
+    }
+}
+
+#hero-nav-menu.active {
+    display: flex;
+}
+
+#hero-nav-btn-burger:hover .hero-nav-btn-burger-line {
+    background-color: #64748b;
+}
+
+.hero-content-social-link:hover svg {
+    fill: #2c4664;
+}

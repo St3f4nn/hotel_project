@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" class="scroll-smooth">
 	<head>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=7">
@@ -9,7 +9,133 @@
 		<meta name="author" content="Stefan Gajić">
         <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
         <link rel="stylesheet" href="./css/output.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400&display=swap" rel="stylesheet">
 		<title>HOTEL | Exclusive Boutique Hotel</title>
 	</head>
-	<body class="debug-screens"></body>
+	<body class="debug-screens font-nunito-sans">
+		<!-- Hero -->
+		<div id="hero" class="pb-20 h-219.75 sm:h-max bg-no-repeat bg-center bg-cover bg-fixed" style="background-image: url('./resources/images/01_hero/hero_background.svg');">
+			<div id="hero-nav" class="py-4">
+				<div class="container flex items-center justify-between relative">
+					<div id="hero-nav-logo">
+						<a href="#hero" class="logo">HOTEL</a>
+					</div>
+					<div id="hero-nav-menu" class="items-center lg:w-110.5 justify-between flex-col lg:flex-row lg:relative absolute top-20 left-0 right-0 lg:top-0 py-8 lg:py-0 gap-4 lg:gap-0 rounded-15 bg-white lg:bg-transparent mx-3.5 lg:flex hidden shadow-2xl lg:shadow-none z-30">
+						<div id="hero-nav-menu-logo" class="lg:hidden">
+							<img src="./resources/images/01_hero/hero_logo.svg" alt="hero-logo">
+						</div>
+						<div class="hero-nav-menu-link">
+							<a href="#about" class="hero-nav-menu-link-el">About</a>
+						</div>
+						<div class="hero-nav-menu-link">
+							<a href="#services" class="hero-nav-menu-link-el">Service</a>
+						</div>
+						<div class="hero-nav-menu-link">
+							<a href="#rooms" class="hero-nav-menu-link-el">Rooms</a>
+						</div>
+						<div class="hero-nav-menu-link">
+							<a href="#blog" class="hero-nav-menu-link-el">Blog</a>
+						</div>
+						<div class="hero-nav-menu-link">
+							<a href="#footer" class="hero-nav-menu-link-el">Contact</a>
+						</div>
+					</div>
+					<div id="hero-nav-btn" class="flex items-center gap-2.75">
+						<div id="hero-nav-btn-signup">
+							<a href="#" id="hero-nav-btn-signup-el" class="border border-solid border-white border-opacity-29.51 pt-3.25 pb-2.75 inline-block px-8.5 sm:px-12.5 rounded-3xl font-normal text-base tracking-1 text-white hover:border-opacity-100 hover:bg-white hover:text-slate-500 transition-all">SIGN UP</a>
+						</div>
+						<div id="hero-nav-btn-burger" class="w-max p-4.5 border border-solid border-white border-opacity-29.51 cursor-pointer rounded-full hover:bg-white hover:border-opacity-100 transition-all lg:hidden">
+							<div class="hero-nav-btn-burger-line"></div>
+							<div class="hero-nav-btn-burger-line mt-0.75"></div>
+							<div class="hero-nav-btn-burger-line mt-0.75"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="hero-content" class="mt-7.5 sm:mt-32">
+				<div class="container">
+					<div id="hero-content-heading" class="font-extralight sm:text-7xl sm:leading-20 text-white text-56 leading-16">Exclusive<br> Boutique<br> Hotel</div>
+					<div id="hero-content-subheading" class="font-light text-xl leading-8 text-white mt-6.75 sm:mt-6.25">Luxury Boutique Hotel</div>
+					<div id="hero-content-social" class="flex items-center gap-2 mt-9.75">
+						<div class="hero-content-social-link">
+							<svg width="10" height="16" viewBox="0 0 10 16" xmlns="http://www.w3.org/2000/svg" fill="white">
+								<path d="M2.66667 5.33333H0V8H2.66667V16H6.66667V8H9.09333L9.33333 5.33333H6.66667V4.22267C6.66667 3.58533 6.79467 3.33333 7.41067 3.33333H9.33333V0H6.128C3.73067 0 2.66667 1.056 2.66667 3.07733V5.33333Z">
+							</svg>								
+						</div>
+						<div class="hero-content-social-link">
+							<svg width="16" height="14" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg" fill="white">
+								<path d="M16 1.54C15.412 1.80133 14.7787 1.97733 14.1147 2.05733C14.7933 1.65067 15.312 1.008 15.5587 0.241333C14.924 0.617333 14.2213 0.890667 13.4733 1.03733C12.876 0.398667 12.0213 0 11.0787 0C8.95867 0 7.40133 1.97733 7.88 4.03067C5.15333 3.89333 2.73333 2.58667 1.11467 0.601333C0.254667 2.076 0.669333 4.00667 2.13067 4.984C1.59333 4.96667 1.088 4.81867 0.645333 4.57333C0.609333 6.09333 1.7 7.516 3.27867 7.83333C2.81733 7.95867 2.31067 7.988 1.796 7.88933C2.21333 9.19333 3.428 10.1413 4.86267 10.168C3.48 11.2507 1.74267 11.7347 0 11.5293C1.45333 12.4613 3.17733 13.004 5.03067 13.004C11.1267 13.004 14.5693 7.856 14.3613 3.23867C15.004 2.77733 15.56 2.19867 16 1.54Z">
+							</svg>
+						</div>
+						<div class="hero-content-social-link">
+							<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="white">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C5.82667 0 5.556 0.00933333 4.70133 0.0493333C1.79467 0.182667 0.181333 1.79467 0.048 4.70133C0.00933333 5.556 0 5.828 0 8C0 10.1733 0.00933333 10.4453 0.048 11.2987C0.181333 14.204 1.79467 15.8187 4.70133 15.952C5.556 15.9907 5.82667 16 8 16C10.1733 16 10.4453 15.9907 11.3 15.952C14.2013 15.8187 15.8213 14.2067 15.952 11.2987C15.9907 10.4453 16 10.1733 16 8C16 5.828 15.9907 5.556 15.952 4.70133C15.8213 1.79867 14.2067 0.181333 11.3 0.0493333C10.4453 0.00933333 10.1733 0 8 0ZM8 1.44267C10.136 1.44267 10.3893 1.45067 11.2333 1.48933C13.4027 1.588 14.4133 2.616 14.5133 4.768C14.5507 5.612 14.5587 5.864 14.5587 8C14.5587 10.136 14.5507 10.3893 14.5133 11.232C14.4133 13.3827 13.404 14.4133 11.2333 14.512C10.3893 14.5493 10.1373 14.5587 8 14.5587C5.864 14.5587 5.61067 14.5507 4.768 14.512C2.59467 14.412 1.588 13.38 1.488 11.232C1.45067 10.3893 1.44133 10.136 1.44133 8C1.44133 5.864 1.45067 5.61067 1.488 4.768C1.58667 2.61467 2.59733 1.58667 4.768 1.488C5.61067 1.44933 5.864 1.44267 8 1.44267ZM3.892 8C3.892 5.73067 5.732 3.892 8 3.892C10.268 3.892 12.108 5.732 12.108 8C12.108 10.2693 10.268 12.108 8 12.108C5.732 12.108 3.892 10.2693 3.892 8ZM8 10.6667C6.52667 10.6667 5.33333 9.47333 5.33333 8C5.33333 6.528 6.52667 5.33333 8 5.33333C9.472 5.33333 10.668 6.52667 10.668 8C10.668 9.47333 9.472 10.6667 8 10.6667ZM11.3093 3.73067C11.3093 3.2 11.74 2.77067 12.2693 2.77067C12.8013 2.77067 13.2307 3.2 13.2307 3.73067C13.2307 4.26133 12.8 4.69067 12.2693 4.69067C11.7387 4.69067 11.3093 4.26 11.3093 3.73067Z">
+							</svg>
+						</div>
+					</div>
+					<div id="hero-content-book" class="relative mt-12 sm:mt-16">
+						<div id="hero-content-book-front" class="bg-2c4664 relative z-10 flex rounded-15 lg:flex-row flex-col divide-y lg:divide-y-0 lg:divide-x divide-21364e">
+							<div id="hero-content-book-front-checkin" class="pl-8 pt-5.75 pb-6.5 lg:w-1/4">
+								<div id="hero-content-book-front-checkin-heading" class="book-heading text-left sm:text-center lg:text-left">ARRIVAL</div>
+								<div id="hero-content-book-front-checkin-content" class="mt-1.75 flex items-center justify-start sm:justify-center lg:justify-start">
+									<div id="hero-content-book-front-checkin-content-number" class="book-date-number mr-4">18</div>
+									<div id="hero-content-book-front-checkin-content-date" class="mr-3.5 sm:mr-3.65">
+										<div id="hero-content-book-front-checkin-content-date-month-year" class="font-light text-lg leading-8 text-white">Oct, 2019</div>
+										<div id="hero-content-book-front-checkin-content-date-day" class="book-day">Friday</div>
+									</div>
+									<div id="hero-content-book-front-checkin-content-arr" class="cursor-pointer">
+										<img src="./resources/images/01_hero/hero_arr_down.svg" alt="hero-arr-down">
+									</div>
+								</div>
+							</div>
+							<div id="hero-content-book-front-checkout" class="pl-8 pt-5.75 pb-6.5 lg:w-1/4">
+								<div id="hero-content-book-front-checkout-heading" class="book-heading text-left sm:text-center lg:text-left">DEPARTURE</div>
+								<div id="hero-content-book-front-checkout-content" class="mt-1.75 flex items-center justify-start sm:justify-center lg:justify-start">
+									<div id="hero-content-book-front-checkout-content-number" class="book-date-number mr-4 sm:mr-2.5">19</div>
+									<div id="hero-content-book-front-checkout-content-date" class="mr-4 sm:mr-5.4325">
+										<div id="hero-content-book-front-checkout-content-date-month-year" class="font-light text-lg leading-8 text-white">Oct, 2019</div>
+										<div id="hero-content-book-front-checkout-content-date-day" class="book-day">Saturday</div>
+									</div>
+									<div id="hero-content-book-front-checkout-content-arr" class="cursor-pointer ">
+										<img src="./resources/images/01_hero/hero_arr_down.svg" alt="hero-arr-down">
+									</div>
+								</div>
+							</div>
+							<div id="hero-content-book-front-guests" class="flex items-center lg:w-1/4 divide-x divide-21364e">
+								<div id="hero-content-book-front-guests-adults" class="pt-5.75 pb-6.5 w-1/2">
+									<div id="hero-content-book-front-guests-adults-heading" class="book-heading text-center">ADULTS</div>
+									<div id="hero-content-book-front-guests-adults-content" class="mt-1.75 flex items-center justify-center">
+										<div id="hero-content-book-front-guests-adults-content-decrement" class="book-plus-minus mr-3.5 sm:mr-4.75 adults-decrement">-</div>
+										<div id="hero-content-book-front-guests-adults-content-number" class="book-number mr-3.25 sm:mr-2.25 adults-number">2</div>
+										<div id="hero-content-book-front-guests-adults-content-increment" class="book-plus-minus adults-increment">+</div>
+									</div>
+								</div>
+								<div id="hero-content-book-front-guests-kids" class="pt-5.75 pb-6.5 w-1/2">
+									<div id="hero-content-book-front-guests-kids-heading" class="book-heading text-center">CHILDREN</div>
+									<div id="hero-content-book-front-guests-kids-content" class="mt-1.75 flex items-center justify-center">
+										<div id="hero-content-book-front-guests-kids-content-decrement" class="book-plus-minus mr-3.5 sm:mr-4">-</div>
+										<div id="hero-content-book-front-guests-kids-content-number" class="book-number mr-3.25 sm:mr-3">0</div>
+										<div id="hero-content-book-front-guests-kids-content-increment" class="book-plus-minus">+</div>
+									</div>
+								</div>
+							</div>
+							<div id="hero-content-book-front-check" class="lg:w-1/4 pt-12 pb-12 flex justify-center">
+								<a href="#" id="hero-content-book-front-check-el" class="px-6 pt-3.25 pb-2.75 inline-block font-normal text-base tracking-1 text-333333 rounded-3xl bg-c8ff8c hover:bg-white transition-all">CHECK AVAILABILITY</a>
+							</div>
+						</div>
+						<div id="hero-content-book-arr" class="w-12 h-12 rounded-full bg-white cursor-pointer shadow-xl flex items-center justify-center absolute -bottom-6 left-1/2 -translate-x-6 hover:translate-y-1 transition-all z-20">
+							<img src="./resources/images/01_hero/hero_book_arr_down.svg" alt="hero-book-arr-down">
+						</div>
+						<div id="hero-content-book-back" class="h-36 bg-192c42 absolute left-8 right-8 -bottom-4 z-0 rounded-15"></div>
+						<div id="hero-content-book-circles" class="absolute -top-12 right-2.25 lg:right-14.5 z-0">
+							<img src="./resources/images/01_hero/hero_circles.png" alt="hero-circles">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="./js/script.js"></script>
+	</body>
 </html>
