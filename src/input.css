@@ -8,11 +8,11 @@
     }
 
     .logo {
-        @apply font-extralight text-40 leading-12 text-white cursor-pointer;
+        @apply text-white cursor-pointer font-extralight text-40 leading-12;
     }
 
     .hero-nav-menu-link-el {
-        @apply lg:font-light text-lg leading-8 lg:text-white hover:text-slate-500 transition-all text-2c4664 font-normal;
+        @apply text-lg font-normal leading-8 transition-all lg:font-light lg:text-white hover:text-slate-500 text-2c4664;
     }
 
     .hero-nav-btn-burger-line {
@@ -28,11 +28,23 @@
     }
 
     .book-date-number, .book-number {
-        @apply font-extralight text-56 leading-16 text-white;
+        @apply text-white font-extralight text-56 leading-16;
     }
 
     .book-plus-minus {
-        @apply font-light text-2xl text-white cursor-pointer;
+        @apply text-2xl font-light text-white cursor-pointer;
+    }
+
+    .section-heading {
+        @apply font-extralight sm:text-56 sm:leading-16 text-333333 text-40 leading-12;
+    }
+
+    .section-text {
+        @apply font-light text-lg leading-8 text-333333 opacity-50.16;
+    }
+
+    .section-btn {
+        @apply pt-3.25 pb-2.75 rounded-3xl font-normal text-base tracking-1 text-333333 inline-block border border-solid border-333333 border-opacity-32 hover:bg-2c4664 hover:border-2c4664 hover:text-white transition-all hover:border-opacity-100;
     }
 }
 
