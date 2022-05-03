@@ -16,6 +16,7 @@ module.exports = {
     },
     extend: {
       spacing: {
+        0.25: '1px',
         0.5: '2px',
         0.75: '3px',
         1.75: '7px',
@@ -51,11 +52,15 @@ module.exports = {
         13.25: '53px',
         13.75: '55px',
         14.5: '58px',
+        17.75: '71px',
+        18.25: '73px',
         18.75: '75px',
         19.5: '78px',
         25: '100px',
+        29.75: '119px',
         30: '120px',
         32.5: '130px',
+        35.25: '141px',
         38: '152px',
         41.5: '166px',
         42.5: '170px'
@@ -88,6 +93,7 @@ module.exports = {
         219.75: '879px'
       },
       width: {
+        67.5: '270px',
         110.5: '442px'
       },
       borderRadius: {
@@ -103,7 +109,8 @@ module.exports = {
         'd8d8d8': '#d8d8d8',
         'edf1f5': '#edf1f5',
         '7f95ae': '#7f95ae',
-        'e5e9ef': '#e5e9ef'
+        'e5e9ef': '#e5e9ef',
+        'dadada': '#dadada'
       },
       maxWidth: {
         50.25: '201px',
@@ -123,6 +130,9 @@ module.exports = {
       },
       flexBasis: {
         142.5: '570px'
+      },
+      zIndex: {
+        '100': '100'
       }
     },
   },

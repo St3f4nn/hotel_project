@@ -11,7 +11,7 @@
         @apply text-white cursor-pointer font-extralight text-40 leading-12;
     }
 
-    .hero-nav-menu-link-el {
+    .hero-nav-menu-link-el, .footer-mid-menu-left-link-el, .footer-mid-menu-right-link-el {
         @apply text-lg font-normal leading-8 transition-all lg:font-light lg:text-white hover:text-slate-500 text-2c4664;
     }
 
@@ -69,6 +69,14 @@
 
     .gallery-img img {
         @apply w-full transition-all cursor-pointer hover:scale-125 opacity-70 hover:opacity-100;
+    }
+
+    .footer-mid-menu-left-link, .footer-mid-menu-right-link {
+        @apply flex sm:justify-center lg:justify-start;
+    }
+
+    .footer-mid-menu-left-link-el, .footer-mid-menu-right-link-el {
+        @apply text-white;
     }
 }
 

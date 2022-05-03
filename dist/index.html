@@ -22,7 +22,7 @@
 					<div id="hero-nav-logo">
 						<a href="#hero" class="logo">HOTEL</a>
 					</div>
-					<div id="hero-nav-menu" class="items-center lg:w-110.5 justify-between flex-col lg:flex-row lg:relative absolute top-20 left-0 right-0 lg:top-0 py-8 lg:py-0 gap-4 lg:gap-0 rounded-15 bg-white lg:bg-transparent mx-3.5 lg:flex hidden shadow-2xl lg:shadow-none z-30">
+					<div id="hero-nav-menu" class="items-center lg:w-110.5 justify-between flex-col lg:flex-row lg:relative absolute top-20 left-0 right-0 lg:top-0 py-8 lg:py-0 gap-4 lg:gap-0 rounded-15 bg-white lg:bg-transparent mx-3.5 lg:flex hidden shadow-2xl lg:shadow-none z-100">
 						<div id="hero-nav-menu-logo" class="lg:hidden">
 							<img src="./resources/images/01_hero/hero_logo.svg" alt="hero-logo">
 						</div>
@@ -340,9 +340,75 @@
 			</div>
 		</div>
 		<!-- Footer -->
+		<div id="footer" class="bg-2c4664 pt-18.75 pb-18.25 lg:pb-17.75">
+			<div class="container flex flex-col lg:justify-between sm:items-center lg:flex-row lg:items-start">
+				<div id="footer-left">
+					<div id="footer-left-logo" class="flex sm:justify-center lg:justify-start">
+						<a href="#hero" class="logo sm:block lg:inline-block">HOTEL</a>
+					</div>
+					<div id="footer-left-phone" class="flex items-center lg:ml-0.25 mt-3.75 sm:justify-center lg:justify-start sm:ml-0 ml-0.25">
+						<div id="footer-left-phone-icon" class="mr-3.75">
+							<img src="./resources/images/11_footer/footer_phone.svg" alt="footer-phone">
+						</div>
+						<div id="footer-left-phone-number" class="text-lg font-light leading-8 text-white">(4321) 0987-654-320</div>
+					</div>
+					<div id="footer-left-email" class="flex items-center sm:justify-center lg:justify-start">
+						<div id="footer-left-email-icon" class="mr-3.5">
+							<img src="./resources/images/11_footer/footer_email.svg" alt="footer-email">
+						</div>
+						<div id="footer-left-email-text" class="text-lg font-light leading-8 text-white">support@hotel.com</div>
+					</div>
+					<div id="footer-left-address" class="flex items-center lg:ml-0.5 sm:ml-0 ml-0.5 sm:justify-center lg:justify-start">
+						<div id="footer-left-address-icon" class="mr-3.75">
+							<img src="./resources/images/11_footer/footer_location.svg" alt="footer-location">
+						</div>
+						<div id="footer-left-address-text" class="font-light text-lg leading-8 text-white opacity-50.3">33 Jaja Park Rd, Yellow, USA</div>
+					</div>
+				</div>
+				<div id="footer-mid" class="lg:mt-3.25 mt-11.5">
+					<div id="footer-mid-heading" class="text-2xl font-light text-white sm:text-center lg:text-left">Menu</div>
+					<div id="footer-mid-menu" class="flex items-center lg:gap-35.25 mt-4.5 sm:gap-20 gap-29.75">
+						<div id="footer-mid-menu-left">
+							<div class="footer-mid-menu-left-link">
+								<a href="#about" class="footer-mid-menu-left-link-el">About</a>
+							</div>
+							<div class="footer-mid-menu-left-link">
+								<a href="#services" class="footer-mid-menu-left-link-el">Service</a>
+							</div>
+							<div class="footer-mid-menu-left-link">
+								<a href="#rooms" class="footer-mid-menu-left-link-el">Rooms</a>
+							</div>
+						</div>
+						<div id="footer-mid-menu-right">
+							<div class="footer-mid-menu-right-link">
+								<a href="#testimonials" class="footer-mid-menu-right-link-el">Testimonials</a>
+							</div>
+							<div class="footer-mid-menu-right-link">
+								<a href="#blog" class="footer-mid-menu-right-link-el">Blog</a>
+							</div>
+							<div class="footer-mid-menu-right-link">
+								<a href="#" class="footer-mid-menu-right-link-el">Contact</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="footer-right" class="lg:mt-1.75 mt-11.5">
+					<div id="footer-right-heading" class="text-2xl font-light text-white sm:text-center lg:text-left">Subscribe</div>
+					<div id="footer-right-input" class="relative mt-6">
+						<div id="footer-right-input-field">
+							<input type="email" placeholder="Email" class="w-full sm:w-67.5 py-2 pl-4 border border-solid focus:outline-none border-dadada">
+						</div>
+						<div id="footer-right-input-plane" class="absolute right-3.5 sm:right-2.75 -translate-y-1/2 top-1/2 cursor-pointer hover:scale-75 transition-all">
+							<img src="./resources/images/11_footer/footer_plane.svg" alt="footer-plane">
+						</div>
+					</div>
+					<div id="footer-right-message" class="font-normal text-sm leading-6 text-white opacity-49.56 mt-3.75 sm:text-center lg:text-left">No spam. Only profit.</div>
+				</div>
+			</div>
+		</div>
 		<!-- Footer copyright -->
 		<div id="footer-copyright" class="bg-21364e sm:pt-7.75 sm:pb-8 pt-12 pb-9.5">
-			<div class="container flex flex-col items-center sm:justify-between sm:flex-row">
+			<div class="container flex flex-col items-center sm:justify-between lg:flex-row">
 				<div id="footer-copyright-social" class="flex items-center gap-2">
 					<div class="footer-copyright-social-link">
 						<svg width="10" height="16" viewBox="0 0 10 16" xmlns="http://www.w3.org/2000/svg" fill="white">
@@ -360,7 +426,7 @@
 						</svg>
 					</div>
 				</div>
-				<div id="footer-copyright-message" class="text-white section-text opacity-50.3 mt-6.5 sm:mt-0 sm:max-w-max max-w-50.25 text-center">Copyright &copy; 2019 Hotel. All Rights Reserved.</div>
+				<div id="footer-copyright-message" class="text-white section-text opacity-50.3 mt-6.5 lg:mt-0 lg:max-w-max max-w-50.25 text-center">Copyright &copy; 2019 Hotel. All Rights Reserved.</div>
 			</div>
 		</div>
 		<script src="./js/script.js"></script>
