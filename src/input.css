@@ -50,6 +50,18 @@
     .restaurantsbars-card-locations-point {
         @apply absolute transition-all cursor-pointer hover:translate-y-1;
     }
+
+    .advantages-container-card {
+        @apply pt-8 px-8 pb-8.5 rounded-30 shadow-card-shadow bg-white;
+    }
+
+    .advantages-container-card-img {
+        @apply border border-solid border-d8d8d8 w-max rounded-15;
+    }
+
+    .advantages-container-card-heading {
+        @apply text-2xl font-light text-333333;
+    }
 }
 
 #hero-nav-menu.active {
