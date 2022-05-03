@@ -46,6 +46,10 @@
     .section-btn {
         @apply pt-3.25 pb-2.75 rounded-3xl font-normal text-base tracking-1 text-333333 inline-block border border-solid border-333333 border-opacity-32 hover:bg-2c4664 hover:border-2c4664 hover:text-white transition-all hover:border-opacity-100;
     }
+
+    .restaurantsbars-card-locations-point {
+        @apply absolute transition-all cursor-pointer hover:translate-y-1;
+    }
 }
 
 #hero-nav-menu.active {
