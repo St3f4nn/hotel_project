@@ -617,7 +617,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .rooms-slider-card {
   position: relative;
-  width: 100%;
   flex-shrink: 0;
   flex-grow: 0;
   flex-basis: 346px;
@@ -635,9 +634,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 @media (min-width: 640px) {
   .rooms-slider-card {
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
     flex-basis: 370px;
   }
 }
@@ -1117,18 +1113,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   left: 2.5rem;
 }
 
-.right-3\.5 {
-  right: 14px;
-}
-
-.top-1\/2 {
-  top: 50%;
-}
-
-.right-3 {
-  right: 0.75rem;
-}
-
 .bottom-8\.25 {
   bottom: 33px;
 }
@@ -1143,6 +1127,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .right-24 {
   right: 6rem;
+}
+
+.right-3\.5 {
+  right: 14px;
+}
+
+.top-1\/2 {
+  top: 50%;
+}
+
+.right-3 {
+  right: 0.75rem;
 }
 
 .z-100 {
@@ -1515,10 +1511,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .gap-8 {
   gap: 2rem;
-}
-
-.gap-7\.5 {
-  gap: 30px;
 }
 
 .gap-7 {
