@@ -63,6 +63,34 @@
         @apply text-2xl font-light text-333333;
     }
 
+    .rooms-slider-card {
+        @apply relative flex-grow-0 flex-shrink-0 w-full px-6 pt-6 pb-12 bg-white sm:w-max sm:basis-92.5 rounded-30 shadow-card-shadow basis-86.5;
+    }
+
+    .rooms-slider-card-img-background img {
+        @apply w-full;
+    }
+
+    .rooms-slider-card-img-price {
+        @apply absolute px-6 py-4 text-xl font-light leading-8 bg-white w-max rounded-15 text-333333 top-6 left-6;
+    }
+
+    .rooms-slider-card-heading {
+        @apply font-extralight text-40 leading-12 text-333333 mt-8.75 pl-2;
+    }
+
+    .rooms-slider-card-text {
+        @apply mt-3.75 pl-2;
+    }
+
+    .rooms-slider-card-btn {
+        @apply pl-2 mt-5;
+    }
+
+    .rooms-slide {
+        @apply absolute z-50 flex items-center justify-center w-12 h-12 transition-all bg-white rounded-full cursor-pointer shadow-card-shadow top-1/2;
+    }
+
     .gallery-img {
         @apply overflow-hidden;
     }
@@ -90,4 +118,8 @@
 
 .hero-content-social-link:hover svg, .footer-copyright-social-link:hover svg {
     fill: #2c4664;
+}
+
+#rooms-slider::-webkit-scrollbar {
+    display: none;
 }

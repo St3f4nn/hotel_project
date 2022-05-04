@@ -615,6 +615,99 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(51 51 51 / var(--tw-text-opacity));
 }
 
+.rooms-slider-card {
+  position: relative;
+  width: 100%;
+  flex-shrink: 0;
+  flex-grow: 0;
+  flex-basis: 346px;
+  border-radius: 30px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 3rem;
+  --tw-shadow: 20px 20px 40px rgba(0, 0, 0, 0.1);
+  --tw-shadow-colored: 20px 20px 40px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+@media (min-width: 640px) {
+  .rooms-slider-card {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    flex-basis: 370px;
+  }
+}
+
+.rooms-slider-card-img-background img {
+  width: 100%;
+}
+
+.rooms-slider-card-img-price {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 15px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 2rem;
+  --tw-text-opacity: 1;
+  color: rgb(51 51 51 / var(--tw-text-opacity));
+}
+
+.rooms-slider-card-heading {
+  margin-top: 35px;
+  padding-left: 0.5rem;
+  font-size: 40px;
+  font-weight: 200;
+  line-height: 48px;
+  --tw-text-opacity: 1;
+  color: rgb(51 51 51 / var(--tw-text-opacity));
+}
+
+.rooms-slider-card-text {
+  margin-top: 15px;
+  padding-left: 0.5rem;
+}
+
+.rooms-slider-card-btn {
+  margin-top: 1.25rem;
+  padding-left: 0.5rem;
+}
+
+.rooms-slide {
+  position: absolute;
+  top: 50%;
+  z-index: 50;
+  display: flex;
+  height: 3rem;
+  width: 3rem;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-shadow: 20px 20px 40px rgba(0, 0, 0, 0.1);
+  --tw-shadow-colored: 20px 20px 40px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .gallery-img {
   overflow: hidden;
 }
@@ -984,6 +1077,46 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: 1.75rem;
 }
 
+.left-4 {
+  left: 1rem;
+}
+
+.right-4 {
+  right: 1rem;
+}
+
+.right-12 {
+  right: 3rem;
+}
+
+.left-1\.5 {
+  left: 6px;
+}
+
+.left-1 {
+  left: 0.25rem;
+}
+
+.right-1\.5 {
+  right: 6px;
+}
+
+.right-1 {
+  right: 0.25rem;
+}
+
+.top-38 {
+  top: 152px;
+}
+
+.left-10\.75 {
+  left: 43px;
+}
+
+.left-10 {
+  left: 2.5rem;
+}
+
 .right-3\.5 {
   right: 14px;
 }
@@ -994,6 +1127,26 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .right-3 {
   right: 0.75rem;
+}
+
+.bottom-8\.25 {
+  bottom: 33px;
+}
+
+.right-24\.5 {
+  right: 98px;
+}
+
+.bottom-8 {
+  bottom: 2rem;
+}
+
+.right-24 {
+  right: 6rem;
+}
+
+.z-100 {
+  z-index: 100;
 }
 
 .z-50 {
@@ -1020,8 +1173,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: -20;
 }
 
-.z-100 {
-  z-index: 100;
+.-z-30 {
+  z-index: -30;
 }
 
 .mx-3\.5 {
@@ -1164,6 +1317,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mt-4\.5 {
   margin-top: 18px;
+}
+
+.mt-13\.5 {
+  margin-top: 54px;
 }
 
 .ml-0\.25 {
@@ -1360,6 +1517,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 2rem;
 }
 
+.gap-7\.5 {
+  gap: 30px;
+}
+
+.gap-7 {
+  gap: 1.75rem;
+}
+
 .gap-29\.75 {
   gap: 119px;
 }
@@ -1379,6 +1544,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .divide-21364e > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-opacity: 1;
   border-color: rgb(33 54 78 / var(--tw-divide-opacity));
+}
+
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
+.overflow-y-hidden {
+  overflow-y: hidden;
 }
 
 .scroll-smooth {
@@ -1435,6 +1608,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-2c4664 {
   --tw-border-opacity: 1;
   border-color: rgb(44 70 100 / var(--tw-border-opacity));
+}
+
+.border-c8ff8c {
+  --tw-border-opacity: 1;
+  border-color: rgb(200 255 140 / var(--tw-border-opacity));
 }
 
 .border-dadada {
@@ -1949,14 +2127,34 @@ Ensure the default browser behavior of the `hidden` attribute.
   fill: #2c4664;
 }
 
+#rooms-slider::-webkit-scrollbar {
+  display: none;
+}
+
 .hover\:translate-y-1:hover {
   --tw-translate-y: 0.25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:-translate-x-1:hover {
+  --tw-translate-x: -0.25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:translate-x-1:hover {
+  --tw-translate-x: 0.25rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .hover\:scale-105:hover {
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:scale-95:hover {
+  --tw-scale-x: .95;
+  --tw-scale-y: .95;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1975,9 +2173,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-c8ff8c:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(200 255 140 / var(--tw-bg-opacity));
+}
+
 .hover\:text-slate-500:hover {
   --tw-text-opacity: 1;
   color: rgb(100 116 139 / var(--tw-text-opacity));
+}
+
+.hover\:text-333333:hover {
+  --tw-text-opacity: 1;
+  color: rgb(51 51 51 / var(--tw-text-opacity));
 }
 
 .focus\:outline-none:focus {
@@ -1988,6 +2196,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 @media (min-width: 640px) {
   .sm\:bottom-16 {
     bottom: 4rem;
+  }
+
+  .sm\:top-40 {
+    top: 10rem;
   }
 
   .sm\:right-2\.75 {
@@ -2166,6 +2378,14 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-bottom: 2.25rem;
   }
 
+  .sm\:pt-20\.5 {
+    padding-top: 82px;
+  }
+
+  .sm\:pt-20 {
+    padding-top: 5rem;
+  }
+
   .sm\:pt-7\.75 {
     padding-top: 31px;
   }
@@ -2193,6 +2413,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 768px) {
+  .md\:top-32 {
+    top: 8rem;
+  }
+
   .md\:flex-shrink-0 {
     flex-shrink: 0;
   }
@@ -2241,6 +2465,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:top-41\.5 {
     top: 166px;
+  }
+
+  .lg\:top-16 {
+    top: 4rem;
   }
 
   .lg\:mt-4 {
@@ -2313,6 +2541,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:max-w-117\.5 {
     max-width: 470px;
+  }
+
+  .lg\:max-w-92\.5 {
+    max-width: 370px;
   }
 
   .lg\:max-w-max {
@@ -2394,6 +2626,22 @@ Ensure the default browser behavior of the `hidden` attribute.
     right: -2rem;
   }
 
+  .xl\:-left-2\.5 {
+    left: -10px;
+  }
+
+  .xl\:-left-2 {
+    left: -0.5rem;
+  }
+
+  .xl\:-right-2\.5 {
+    right: -10px;
+  }
+
+  .xl\:-right-2 {
+    right: -0.5rem;
+  }
+
   .xl\:col-span-2 {
     grid-column: span 2 / span 2;
   }
@@ -2430,5 +2678,38 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .\32xl\:-right-12 {
     right: -3rem;
+  }
+
+  .\32xl\:top-46\.5 {
+    top: 186px;
+  }
+
+  .\32xl\:-left-8\.5 {
+    left: -34px;
+  }
+
+  .\32xl\:-left-8 {
+    left: -2rem;
+  }
+
+  .\32xl\:bottom-37 {
+    bottom: 148px;
+  }
+
+  .\32xl\:-right-8\.5 {
+    right: -34px;
+  }
+
+  .\32xl\:-right-8 {
+    right: -2rem;
+  }
+
+  .\32xl\:z-0 {
+    z-index: 0;
+  }
+
+  .\32xl\:bg-edf1f5 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(237 241 245 / var(--tw-bg-opacity));
   }
 }
