@@ -91,6 +91,30 @@
         @apply absolute z-50 flex items-center justify-center w-12 h-12 transition-all bg-white rounded-full cursor-pointer shadow-card-shadow top-1/2;
     }
 
+    .stats-box {
+        @apply flex flex-col items-center basis-67.5;
+    }
+
+    .stats-box-circle {
+        @apply w-42.5 h-42.5 relative;
+    }
+
+    .stats-box-circle-outer {
+        @apply flex items-center justify-center w-full h-full rounded-full bg-3c5b7e;
+    }
+
+    .stats-box-circle-outer-inner {
+        @apply bg-2c4664 rounded-full w-37.5 h-37.5 flex items-center justify-center;
+    }
+
+    .stats-box-circle-outer-inner-number {
+        @apply relative z-50 text-white font-extralight text-56 leading-16;
+    }
+
+    .stats-box-content {
+        @apply text-2xl font-light text-white mt-7;
+    }
+
     .blog-slider-card {
         @apply transition-all cursor-pointer hover:shadow-none;
     }

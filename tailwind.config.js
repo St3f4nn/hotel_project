@@ -95,10 +95,14 @@ module.exports = {
       },
       height: {
         0.5: '2px',
+        37.5: '150px',
+        42.5: '170px',
         140: '560px',
         219.75: '879px'
       },
       width: {
+        37.5: '150px',
+        42.5: '170px',
         67.5: '270px',
         110.5: '442px'
       },
@@ -116,7 +120,8 @@ module.exports = {
         'edf1f5': '#edf1f5',
         '7f95ae': '#7f95ae',
         'e5e9ef': '#e5e9ef',
-        'dadada': '#dadada'
+        'dadada': '#dadada',
+        '3c5b7e': '#3c5b7e'
       },
       maxWidth: {
         50.25: '201px',
@@ -137,6 +142,7 @@ module.exports = {
         'card-shadow': '20px 20px 40px rgba(0, 0, 0, 0.1)'
       },
       flexBasis: {
+        67.5: '270px',
         86.5: '346px',
         92.5: '370px',
         142.5: '570px'
