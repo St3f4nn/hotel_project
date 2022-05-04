@@ -615,7 +615,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(51 51 51 / var(--tw-text-opacity));
 }
 
-.rooms-slider-card {
+.rooms-slider-card, .blog-slider-card {
   position: relative;
   flex-shrink: 0;
   flex-grow: 0;
@@ -633,16 +633,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 640px) {
-  .rooms-slider-card {
+  .rooms-slider-card, .blog-slider-card {
     flex-basis: 370px;
   }
 }
 
-.rooms-slider-card-img-background img {
+.rooms-slider-card-img-background img, .blog-slider-card-img-background {
   width: 100%;
 }
 
-.rooms-slider-card-img-price {
+.rooms-slider-card-img-price, .blog-slider-card-img-date {
   position: absolute;
   top: 1.5rem;
   left: 1.5rem;
@@ -663,7 +663,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(51 51 51 / var(--tw-text-opacity));
 }
 
-.rooms-slider-card-heading {
+.rooms-slider-card-heading, .blog-slider-card-heading {
   margin-top: 35px;
   padding-left: 0.5rem;
   font-size: 40px;
@@ -673,7 +673,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(51 51 51 / var(--tw-text-opacity));
 }
 
-.rooms-slider-card-text {
+.rooms-slider-card-text, .blog-slider-card-text {
   margin-top: 15px;
   padding-left: 0.5rem;
 }
@@ -683,7 +683,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-left: 0.5rem;
 }
 
-.rooms-slide {
+.rooms-slide, .blog-slide {
   position: absolute;
   top: 50%;
   z-index: 50;
@@ -702,6 +702,65 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+.blog-slider-card {
+  cursor: pointer;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.blog-slider-card:hover {
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.blog-slider-card-heading {
+  margin-top: 27px;
+  padding-right: 0px;
+}
+
+@media (min-width: 640px) {
+  .blog-slider-card-heading {
+    padding-right: 1.5rem;
+  }
+}
+
+.blog-slider-card-info {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 0.5rem;
+}
+
+.blog-slider-card-info-author, .blog-slider-card-info-comments-number {
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: 2rem;
+  --tw-text-opacity: 1;
+  color: rgb(51 51 51 / var(--tw-text-opacity));
+}
+
+.blog-slider-card-info-comments {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.blog-slider-card-info-comments-icon {
+  cursor: pointer;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.blog-slider-card-info-comments-icon:hover {
+  --tw-scale-x: .75;
+  --tw-scale-y: .75;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .gallery-img {
@@ -1127,6 +1186,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .right-24 {
   right: 6rem;
+}
+
+.top-16 {
+  top: 4rem;
+}
+
+.left-7\.75 {
+  left: 31px;
 }
 
 .right-3\.5 {
@@ -2119,7 +2186,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   fill: #2c4664;
 }
 
-#rooms-slider::-webkit-scrollbar {
+#rooms-slider::-webkit-scrollbar, #blog-slider::-webkit-scrollbar {
   display: none;
 }
 
@@ -2192,6 +2259,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .sm\:top-40 {
     top: 10rem;
+  }
+
+  .sm\:top-17\.75 {
+    top: 71px;
   }
 
   .sm\:right-2\.75 {
@@ -2656,6 +2727,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 1440px) {
+  .\32xl\:relative {
+    position: relative;
+  }
+
   .\32xl\:-left-12 {
     left: -3rem;
   }
@@ -2696,6 +2771,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     right: -2rem;
   }
 
+  .\32xl\:bottom-44 {
+    bottom: 11rem;
+  }
+
   .\32xl\:z-0 {
     z-index: 0;
   }
@@ -2703,5 +2782,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   .\32xl\:bg-edf1f5 {
     --tw-bg-opacity: 1;
     background-color: rgb(237 241 245 / var(--tw-bg-opacity));
+  }
+
+  .\32xl\:bg-white {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   }
 }
