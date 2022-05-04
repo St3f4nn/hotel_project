@@ -683,7 +683,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-left: 0.5rem;
 }
 
-.rooms-slide, .blog-slide {
+.rooms-slide, .testimonials-slide, .blog-slide {
   position: absolute;
   top: 50%;
   z-index: 50;
@@ -756,6 +756,107 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 300;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.testimonials-slider-card {
+  position: relative;
+  flex-shrink: 0;
+  flex-grow: 0;
+  flex-basis: 346px;
+  border-radius: 30px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 3rem;
+  padding-top: 2.5rem;
+  --tw-shadow: 20px 20px 40px rgba(0, 0, 0, 0.1);
+  --tw-shadow-colored: 20px 20px 40px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+@media (min-width: 640px) {
+  .testimonials-slider-card {
+    flex-basis: 570px;
+    padding-top: 43px;
+  }
+}
+
+.testimonials-slider-card-quotes {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+.testimonials-slider-card-heading {
+  max-width: 150px;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 300;
+  --tw-text-opacity: 1;
+  color: rgb(51 51 51 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .testimonials-slider-card-heading {
+    max-width: 200px;
+    font-size: 40px;
+    font-weight: 200;
+    line-height: 48px;
+  }
+}
+
+.testimonials-slider-card-text {
+  margin-top: 18px;
+}
+
+@media (min-width: 640px) {
+  .testimonials-slider-card-text {
+    margin-top: 31px;
+  }
+}
+
+.testimonials-slider-card-customer {
+  margin-top: 34px;
+  display: flex;
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .testimonials-slider-card-customer {
+    margin-top: 3.5rem;
+  }
+}
+
+.testimonials-slider-card-customer-info {
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 640px) {
+  .testimonials-slider-card-customer-info {
+    margin-top: 1.5rem;
+  }
+}
+
+.testimonials-slider-card-customer-info-name {
+  max-width: 100px;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 300;
+  --tw-text-opacity: 1;
+  color: rgb(51 51 51 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .testimonials-slider-card-customer-info-name {
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+  }
+}
+
+.testimonials-slider-card-customer-info-rating {
+  margin-top: 7px;
 }
 
 .blog-slider-card {
@@ -1246,6 +1347,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: 0px;
 }
 
+.left-8\.75 {
+  left: 35px;
+}
+
+.top-14 {
+  top: 3.5rem;
+}
+
+.right-21 {
+  right: 84px;
+}
+
 .top-16 {
   top: 4rem;
 }
@@ -1574,6 +1687,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .max-w-50\.25 {
   max-width: 201px;
+}
+
+.max-w-50 {
+  max-width: 200px;
 }
 
 .flex-shrink-0 {
@@ -2273,7 +2390,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   fill: #2c4664;
 }
 
-#rooms-slider::-webkit-scrollbar, #blog-slider::-webkit-scrollbar {
+#rooms-slider::-webkit-scrollbar, #testimonials-slider::-webkit-scrollbar, #blog-slider::-webkit-scrollbar {
   display: none;
 }
 
@@ -2346,6 +2463,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .sm\:top-40 {
     top: 10rem;
+  }
+
+  .sm\:top-18\.25 {
+    top: 73px;
+  }
+
+  .sm\:bottom-14 {
+    bottom: 3.5rem;
   }
 
   .sm\:top-17\.75 {
@@ -2486,6 +2611,14 @@ Ensure the default browser behavior of the `hidden` attribute.
     gap: 1.75rem;
   }
 
+  .sm\:gap-8\.25 {
+    gap: 33px;
+  }
+
+  .sm\:gap-8 {
+    gap: 2rem;
+  }
+
   .sm\:gap-20 {
     gap: 5rem;
   }
@@ -2542,6 +2675,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .sm\:pt-24 {
     padding-top: 6rem;
+  }
+
+  .sm\:pt-23\.5 {
+    padding-top: 94px;
+  }
+
+  .sm\:pb-32 {
+    padding-bottom: 8rem;
   }
 
   .sm\:pt-7\.75 {

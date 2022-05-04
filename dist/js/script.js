@@ -10,6 +10,11 @@ const roomsNextBtn = document.querySelector('#rooms-arr-right');
 const roomsSlider = document.querySelector('#rooms-slider');
 const roomsSliderCards = document.querySelectorAll('.rooms-slider-card');
 
+const testimonialsPrevBtn = document.querySelector('#testimonials-arr-left');
+const testimonialsNextBtn = document.querySelector('#testimonials-arr-right');
+const testimonialsSlider = document.querySelector('#testimonials-slider');
+const testimonialsSliderCards = document.querySelectorAll('.testimonials-slider-card');
+
 const blogPrevBtn = document.querySelector('#blog-arr-left');
 const blogNextBtn = document.querySelector('#blog-arr-right');
 const blogSlider = document.querySelector('#blog-slider');
@@ -31,6 +36,19 @@ roomsSliderCards.forEach((sliderCard) => {
 
     roomsPrevBtn.addEventListener('click', () => {
         roomsSlider.scrollLeft -= cardWidth;
+    });
+});
+
+testimonialsSliderCards.forEach((sliderCard) => {
+    let cardDimensions = sliderCard.getBoundingClientRect();
+    let cardWidth = cardDimensions.width + 33;
+
+    testimonialsNextBtn.addEventListener('click', () => {
+        testimonialsSlider.scrollLeft += cardWidth;
+    });
+
+    testimonialsPrevBtn.addEventListener('click', () => {
+        testimonialsSlider.scrollLeft -= cardWidth;
     });
 });
 

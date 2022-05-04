@@ -87,7 +87,7 @@
         @apply pl-2 mt-5;
     }
 
-    .rooms-slide, .blog-slide {
+    .rooms-slide, .testimonials-slide, .blog-slide {
         @apply absolute z-50 flex items-center justify-center w-12 h-12 transition-all bg-white rounded-full cursor-pointer shadow-card-shadow top-1/2;
     }
 
@@ -113,6 +113,38 @@
 
     .stats-box-content {
         @apply text-2xl font-light text-white mt-7;
+    }
+
+    .testimonials-slider-card {
+        @apply bg-white px-8 pb-12 sm:pt-10.75 pt-10 relative flex-grow-0 flex-shrink-0 sm:basis-142.5 basis-86.5 rounded-30 shadow-card-shadow;
+    }
+
+    .testimonials-slider-card-quotes {
+        @apply absolute top-8 right-8;
+    }
+
+    .testimonials-slider-card-heading {
+        @apply text-2xl font-light sm:font-extralight sm:text-40 sm:leading-12 text-333333 max-w-37.5 sm:max-w-50;
+    }
+
+    .testimonials-slider-card-text {
+        @apply sm:mt-7.75 mt-4.5;
+    }
+
+    .testimonials-slider-card-customer {
+        @apply flex gap-6 sm:mt-14 mt-8.5;
+    }
+
+    .testimonials-slider-card-customer-info {
+        @apply mt-2 sm:mt-6;
+    }
+
+    .testimonials-slider-card-customer-info-name {
+        @apply text-2xl font-light text-333333 max-w-25 sm:max-w-max;
+    }
+
+    .testimonials-slider-card-customer-info-rating {
+        @apply mt-1.75;
     }
 
     .blog-slider-card {
@@ -168,6 +200,6 @@
     fill: #2c4664;
 }
 
-#rooms-slider::-webkit-scrollbar, #blog-slider::-webkit-scrollbar {
+#rooms-slider::-webkit-scrollbar, #testimonials-slider::-webkit-scrollbar, #blog-slider::-webkit-scrollbar {
     display: none;
 }
